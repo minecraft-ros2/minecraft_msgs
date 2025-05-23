@@ -1,0 +1,9 @@
+uint8 MONSTER = 0
+uint8 CREATURE = 1
+uint8 AMBIENT = 2
+uint8 AXOLOTLS = 3
+uint8 UNDERGROUND_WATER_CREATURE = 4
+uint8 WATER_CREATURE = 5
+uint8 WATER_AMBIENT = 6
+uint8 MISC = 7
+uint8 mob_category
