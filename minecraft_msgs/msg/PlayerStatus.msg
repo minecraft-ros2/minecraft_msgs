@@ -1,0 +1,15 @@
+string name
+string dimension
+uint8 food_level
+uint32 score
+uint8 sleep_timer
+uint32 xp_level
+float32 xp_progress
+uint32 total_xp
+float32 health
+float32 max_health
+uint16 air
+uint16 max_air
+string[] active_effects
+minecraft_msgs/Item[] inventory_items 
+minecraft_msgs/Item selected_item
