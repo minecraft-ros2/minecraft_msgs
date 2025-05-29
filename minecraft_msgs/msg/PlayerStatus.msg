@@ -12,4 +12,5 @@ uint16 air
 uint16 max_air
 string[] active_effects
 minecraft_msgs/Item[] inventory_items 
-minecraft_msgs/Item selected_item
+minecraft_msgs/Item main_hand_item
+minecraft_msgs/Item off_hand_item
