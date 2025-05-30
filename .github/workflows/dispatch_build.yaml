@@ -1,7 +1,7 @@
 name: DockerBuildDispatch
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "humble" ]
 
 jobs:
   make_dispatch_event:
