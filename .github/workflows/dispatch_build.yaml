@@ -1,0 +1,17 @@
+name: DockerBuildDispatch
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  make_dispatch_event:
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger
+      run: |
+        curl --fail \
+            -X POST \
+            -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/minecraft-ros2/ros2_java/dispatches \
+            -d "{\"event_type\":\"dispatches\"}"
