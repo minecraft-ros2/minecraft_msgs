@@ -1,0 +1,13 @@
+# ── Goal Definition ──
+# timeout: Indicates the number of seconds after which the operation is considered timed out if it has not been completed since digging began.
+float32 timeout
+
+---
+# ── Result Definition ──
+# result_code: Below statuses are returned as int32
+int32 NORMAL_TERM     = 0
+int32 BLOCK_NOT_FOUND = 1
+int32 TIME_OUT        = 2
+int32 CANCELLED       = 3
+int32 result_code
+
